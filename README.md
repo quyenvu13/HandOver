@@ -2,6 +2,8 @@
 
 HandOver is the project interface for the `SuccessorBind` GenLayer Intelligent Contract. It lets an author open one operational undertaking, lets GenLayer validators classify whether it follows a declared role or remains tied to the author, and then exposes a deterministic seat and performance ledger.
 
+- Live application: [https://hand-over-roan.vercel.app](https://hand-over-roan.vercel.app)
+
 ## Live contract
 
 - Network: GenLayer StudioNet (`61999`)
@@ -58,6 +60,19 @@ pnpm build
 ```
 
 The included contract file has SHA-256 `ca48468c2854a616f14a64dbb9e30f1cdf0c6ee9a2fe97a05deeaaf4f2daeb54`. See [TESTING.md](./TESTING.md) for the runtime path.
+
+## Verified StudioNet run
+
+The primary succession path was completed against the deployment above on 27 September 2026.
+
+- Undertaking ID: `45b31869bb05ff600ab1498cfc73a58ee06ef17070f061eaf0d744cfb30646ab`
+- Consensus result: `RUNS_WITH_ROLE`
+- Seat mode: `TRANSFERABLE`
+- Final seat state: `OCCUPIED`
+- Holder history: `2`
+- Performance history: `2`
+
+The author recorded performance and stepped down, the immediately previous holder was prevented from retaking the vacant seat, a second wallet took the seat and recorded a second performance entry, and an observer wallet could not use holder-only actions. Full wallet and outcome details are recorded in [TESTING.md](./TESTING.md).
 
 ## Repository map
 
